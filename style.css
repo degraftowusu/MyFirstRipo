@@ -1,0 +1,116 @@
+*
+{
+    padding:0;
+    margin:0;
+}
+body
+{
+    background-image:url(image1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+.menu-bar
+{
+    background: green;
+    text-align: center;
+}
+.menu-bar ul
+{
+    display:inline-flex;/*For the menu to be horizontal*/
+    list-style: none;/*Removes bulleting*/
+    color:white;/*For the colour of the text*/
+}
+.menu-bar ul li
+{
+    padding: 15px;
+    width: 50px;
+    margin: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;/*Removes the line under the link from there*/
+    color: white;
+}
+.active,.menu-bar ul li a:hover
+{
+    background: goldenrod;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right:8px;
+}
+.sub-menu1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu1
+{
+    display:block;
+    position:absolute;
+    background:green;
+    margin-top: 15px;
+    margin-left:15px ;
+}
+.menu-bar ul li:hover .sub-menu1 ul
+{
+    display: block;
+    margin: 15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li
+{
+    width:150px;
+    padding:10px;
+    border-bottom:dotted white;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu1 ul li a:hover
+{
+    color: green;
+}
+.sub-menu1
+{
+    display: none;   
+}
+.menu-bar ul li:hover .sub-menu1
+{
+    display:block;
+    position:absolute;
+    background:green;
+    margin-top: 15px;
+    margin-left:15px ;
+}
+.menu-bar ul li:hover .sub-menu1 ul
+{
+    display: block;
+    margin: 15px;
+}
+.menu-bar ul li:hover .sub-menu1 ul li
+{
+    width:150px;
+    padding:10px;
+    border-bottom:dotted white;
+    background:transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.sub-menu2
+{
+    display:none;
+}
+.hover-me:hover .sub-menu2
+{
+    position: absolute;
+    display: block;
+    margin-top:-40px;
+    margin-left:14px;
+    background: blue;
+}
